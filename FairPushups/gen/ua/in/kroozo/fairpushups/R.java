@@ -24,12 +24,20 @@ public final class R {
     public static final class drawable {
         public static final int bgrnd_ring_count_far=0x7f020000;
         public static final int bgrnd_ring_count_near=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int doted_circle=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090002;
+        public static final int action_settings=0x7f090009;
         public static final int container=0x7f090000;
-        public static final int textView1=0x7f090001;
+        public static final int llcurrentStart=0x7f090007;
+        public static final int textView1=0x7f090006;
+        public static final int tvLoading=0x7f090008;
+        public static final int tvRound1=0x7f090001;
+        public static final int tvRound2=0x7f090002;
+        public static final int tvRound3=0x7f090003;
+        public static final int tvRound4=0x7f090004;
+        public static final int tvRound5=0x7f090005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

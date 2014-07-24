@@ -3,18 +3,257 @@
 	android:id="@+id/container"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="ua.in.kroozo.fairpushups.MainActivity"
-	>
+	tools:context="ua.in.kroozo.fairpushups.MainActivity" >
 
-    <TextView
-    	android:id="@+id/textView1"
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:layout_centerHorizontal="true"
-    	android:layout_centerVertical="true"
-    	android:textSize="90sp" 
-    	android:gravity="center"
-    	android:background="@drawable/bgrnd_ring_count_far"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginTop="5dip"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal" >
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dip" >
+
+			<TextView
+				android:id="@+id/tvRound1"
+				android:layout_width="50dip"
+				android:layout_height="50dip"
+				android:background="@drawable/doted_circle"
+				android:gravity="center"
+				android:textSize="14sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dip" >
+
+			<TextView
+				android:id="@+id/tvRound2"
+				android:layout_width="50dip"
+				android:layout_height="50dip"
+				android:background="@drawable/doted_circle"
+				android:gravity="center"
+				android:textSize="14sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dip" >
+
+			<TextView
+				android:id="@+id/tvRound3"
+				android:layout_width="50dip"
+				android:layout_height="50dip"
+				android:background="@drawable/doted_circle"
+				android:gravity="center"
+				android:textSize="14sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dip" >
+
+			<TextView
+				android:id="@+id/tvRound4"
+				android:layout_width="50dip"
+				android:layout_height="50dip"
+				android:background="@drawable/doted_circle"
+				android:gravity="center"
+				android:textSize="14sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="5dip" >
+
+			<TextView
+				android:id="@+id/tvRound5"
+				android:layout_width="50dip"
+				android:layout_height="50dip"
+				android:background="@drawable/doted_circle"
+				android:gravity="center"
+				android:textSize="14sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+
+				<ImageView
+					android:layout_width="13dip"
+					android:layout_height="13dip"
+					android:background="@android:drawable/star_off" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/bgrnd_ring_count_far"
+		android:gravity="center"
+		android:textSize="90sp" />
+
+	<LinearLayout
+		android:id="@+id/llcurrentStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textView1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dip"
+		android:orientation="horizontal" >
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/star_big_on" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:background="@android:drawable/star_big_on" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/star_big_on" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tvLoading"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/llcurrentStart"
+		android:layout_marginLeft="10dip"
+		android:layout_marginTop="5dip"
+		android:text="Body load" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="20dip"
+		android:layout_below="@id/tvLoading"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="3dip"
+		android:background="@android:color/holo_green_dark" />
 
 </RelativeLayout>
-

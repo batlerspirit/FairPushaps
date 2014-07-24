@@ -12,31 +12,30 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-public class MainActivity extends Activity implements SensorEventListener{
+public class MainActivity extends Activity implements SensorEventListener {
 
-	
 	private SensorManager mSensorManager;
 	private Sensor mSensor;
 	private TextView tvNumberOfPushups;
 	private int counter;
 	private boolean fairCount;
-	
-	@Override 
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_1);
-		
+
 		mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 		mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
 		tvNumberOfPushups = (TextView) findViewById(R.id.textView1);
-		
+
 		if (savedInstanceState == null) {
-//			getFragmentManager().beginTransaction()
-//					.add(R.id.container, new PlaceholderFragment()).commit();
+			// getFragmentManager().beginTransaction()
+			// .add(R.id.container, new PlaceholderFragment()).commit();
 			tvNumberOfPushups.setText("0");
 		}
 	}
-	
+
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
@@ -46,17 +45,17 @@ public class MainActivity extends Activity implements SensorEventListener{
 	@Override
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		super.onRestoreInstanceState(savedInstanceState);
-		counter=savedInstanceState.getInt("count");
-		tvNumberOfPushups.setText(counter+"");
+		counter = savedInstanceState.getInt("count");
+		tvNumberOfPushups.setText(counter + "");
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
+		mSensorManager.registerListener(this, mSensor,
+				SensorManager.SENSOR_DELAY_NORMAL);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
-
 
 	@Override
 	protected void onPause() {
@@ -64,7 +63,7 @@ public class MainActivity extends Activity implements SensorEventListener{
 		mSensorManager.unregisterListener(this);
 		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
@@ -76,22 +75,21 @@ public class MainActivity extends Activity implements SensorEventListener{
 
 	@Override
 	public void onSensorChanged(SensorEvent event) {
-		if(0==event.values[0]){
+		if (0 == event.values[0]) {
 			fairCount = true;
-			tvNumberOfPushups.setBackgroundResource(R.drawable.bgrnd_ring_count_near);
+			tvNumberOfPushups
+					.setBackgroundResource(R.drawable.bgrnd_ring_count_near);
 			Sounds.playSound(this);
-		}
-		else{
-			if(true==fairCount){
+		} else {
+			if (true == fairCount) {
 				counter++;
-				tvNumberOfPushups.setText(counter+"");
-				tvNumberOfPushups.setBackgroundResource(R.drawable.bgrnd_ring_count_far);
+				tvNumberOfPushups.setText(counter + "");
+				tvNumberOfPushups
+						.setBackgroundResource(R.drawable.bgrnd_ring_count_far);
 				fairCount = false;
 			}
-			
 		}
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -111,22 +109,21 @@ public class MainActivity extends Activity implements SensorEventListener{
 		return super.onOptionsItemSelected(item);
 	}
 
-
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
-//	public static class PlaceholderFragment extends Fragment {
-//
-//		public PlaceholderFragment() {
-//		}
-//
-//		@Override
-//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//				Bundle savedInstanceState) {
-//			View rootView = inflater.inflate(R.layout.fragment_main, container,
-//					false);
-//			return rootView;
-//		}
-//	}
+	// public static class PlaceholderFragment extends Fragment {
+	//
+	// public PlaceholderFragment() {
+	// }
+	//
+	// @Override
+	// public View onCreateView(LayoutInflater inflater, ViewGroup container,
+	// Bundle savedInstanceState) {
+	// View rootView = inflater.inflate(R.layout.fragment_main, container,
+	// false);
+	// return rootView;
+	// }
+	// }
 
 }
